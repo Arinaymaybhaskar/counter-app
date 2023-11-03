@@ -5,12 +5,12 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCh1RfveQi1YI5RRgmoI7a04a1PmO6xTYM",
-  authDomain: "counter-app-9cb9d.firebaseapp.com",
-  projectId: "counter-app-9cb9d",
-  storageBucket: "counter-app-9cb9d.appspot.com",
-  messagingSenderId: "422876175500",
-  appId: "1:422876175500:web:0281a96255a79f65b26fa9"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 
